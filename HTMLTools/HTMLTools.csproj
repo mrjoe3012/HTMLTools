@@ -43,8 +43,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Body.cs" />
+    <Compile Include="Comment.cs" />
+    <Compile Include="Divider.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Head.cs" />
+    <Compile Include="HTMLAttribute.cs" />
+    <Compile Include="HTMLBooleanAttribute.cs" />
+    <Compile Include="HTMLDocument.cs" />
+    <Compile Include="HTMLElement.cs" />
+    <Compile Include="HTMLFieldAttribute.cs" />
+    <Compile Include="HTMLTools.cs" />
+    <Compile Include="HyperLink.cs" />
+    <Compile Include="IEventAttributes.cs" />
+    <Compile Include="IGlobalAttributes.cs" />
+    <Compile Include="INest.cs" />
+    <Compile Include="IStringLineConvertable.cs" />
+    <Compile Include="IStringLinesConvertable.cs" />
+    <Compile Include="LineBreak.cs" />
+    <Compile Include="Link.cs" />
+    <Compile Include="Paragraph.cs" />
+    <Compile Include="PlainText.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Style.cs" />
+    <Compile Include="Title.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
