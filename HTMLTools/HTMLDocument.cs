@@ -38,7 +38,6 @@ namespace HTMLTools
             List<string> lines = new List<string>();
 
             lines.Add("<!DOCTYPE html>");
-            lines.Add("<meta charset=\"utf-8\">");
             lines.Add("<html>");
 
             foreach(HTMLElement nestedElement in NestedElements)

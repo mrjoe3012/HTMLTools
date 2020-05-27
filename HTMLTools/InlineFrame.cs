@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
-    class Divider : HTMLElement, IGlobalAttributes, IEventAttributes, INest
+    public class InlineFrame : HTMLElement, IGlobalAttributes, IEventAttributes, INest
     {
         public HTMLFieldAttribute ID { get; set; }
         public HTMLFieldAttribute Class { get; set; }
@@ -93,15 +93,34 @@ namespace HTMLTools
         public HTMLFieldAttribute OnVolumeChange { get; set; }
         public HTMLFieldAttribute OnWaiting { get; set; }
         public HTMLFieldAttribute OnToggle { get; set; }
-
         public List<HTMLElement> NestedElements { get; set; }
 
-        public Divider() : base("div")
+        public HTMLFieldAttribute Allow { get; set; }
+        public HTMLFieldAttribute AllowFullscreen { get; set; }
+        public HTMLFieldAttribute AllowPaymentRequest { get; set; }
+        public HTMLFieldAttribute Height { get; set; }
+        public HTMLFieldAttribute Width { get; set; }
+        public HTMLFieldAttribute Name { get; set; }
+        public HTMLFieldAttribute ReferrerPolicy { get; set; }
+        public HTMLFieldAttribute Sandbox { get; set; }
+        public HTMLFieldAttribute Source { get; set; }
+        public HTMLFieldAttribute SourceDoc { get; set; }
+
+        public InlineFrame() : base("iframe")
         {
-            this.NestedElements = new List<HTMLElement>();
+            NestedElements = new List<HTMLElement>();
+            Allow = new HTMLFieldAttribute("allow");
+            AllowFullscreen = new HTMLFieldAttribute("allowfullscreen");
+            AllowPaymentRequest = new HTMLFieldAttribute("allowpaymentrequest");
+            Height = new HTMLFieldAttribute("height");
+            Width = new HTMLFieldAttribute("width");
+            Name = new HTMLFieldAttribute("name");
+            ReferrerPolicy = new HTMLFieldAttribute("referrerpolicy");
+            Sandbox = new HTMLFieldAttribute("sandbox");
+            Source = new HTMLFieldAttribute("src");
+            SourceDoc = new HTMLFieldAttribute("srcdoc");
 
             this.InitAttributes();
         }
-
     }
 }

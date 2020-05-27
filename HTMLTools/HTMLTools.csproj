@@ -43,11 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Article.cs" />
+    <Compile Include="Aside.cs" />
+    <Compile Include="Audio.cs" />
+    <Compile Include="Base.cs" />
     <Compile Include="Body.cs" />
     <Compile Include="Comment.cs" />
-    <Compile Include="Divider.cs" />
+    <Compile Include="Data.cs" />
+    <Compile Include="Details.cs" />
+    <Compile Include="Dialog.cs" />
+    <Compile Include="Division.cs" />
+    <Compile Include="Embed.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="Footer.cs" />
     <Compile Include="Head.cs" />
+    <Compile Include="Header.cs" />
+    <Compile Include="Heading.cs" />
+    <Compile Include="HorizontalRule.cs" />
     <Compile Include="HTMLAttribute.cs" />
     <Compile Include="HTMLBooleanAttribute.cs" />
     <Compile Include="HTMLDocument.cs" />
@@ -58,16 +70,30 @@
     <Compile Include="IEventAttributes.cs" />
     <Compile Include="IGlobalAttributes.cs" />
     <Compile Include="INest.cs" />
+    <Compile Include="InlineFrame.cs" />
     <Compile Include="IStringLineConvertable.cs" />
     <Compile Include="IStringLinesConvertable.cs" />
     <Compile Include="LineBreak.cs" />
     <Compile Include="Link.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Meta.cs" />
+    <Compile Include="Navigation.cs" />
+    <Compile Include="NoScript.cs" />
+    <Compile Include="Object.cs" />
     <Compile Include="Paragraph.cs" />
+    <Compile Include="Param.cs" />
     <Compile Include="PlainText.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Script.cs" />
+    <Compile Include="MediaSource.cs" />
+    <Compile Include="Section.cs" />
+    <Compile Include="Span.cs" />
     <Compile Include="Style.cs" />
+    <Compile Include="Summary.cs" />
     <Compile Include="Title.cs" />
+    <Compile Include="Track.cs" />
+    <Compile Include="Video.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
