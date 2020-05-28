@@ -43,18 +43,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Area.cs" />
     <Compile Include="Article.cs" />
     <Compile Include="Aside.cs" />
     <Compile Include="Audio.cs" />
     <Compile Include="Base.cs" />
     <Compile Include="Body.cs" />
+    <Compile Include="Canvas.cs" />
+    <Compile Include="Caption.cs" />
+    <Compile Include="Column.cs" />
+    <Compile Include="ColumnGroup.cs" />
     <Compile Include="Comment.cs" />
     <Compile Include="Data.cs" />
+    <Compile Include="DescriptionList.cs" />
     <Compile Include="Details.cs" />
     <Compile Include="Dialog.cs" />
     <Compile Include="Division.cs" />
+    <Compile Include="DLDescription.cs" />
+    <Compile Include="DLTerm.cs" />
     <Compile Include="Embed.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="FigCaption.cs" />
+    <Compile Include="Figure.cs" />
     <Compile Include="Footer.cs" />
     <Compile Include="Head.cs" />
     <Compile Include="Header.cs" />
@@ -69,19 +79,24 @@
     <Compile Include="HyperLink.cs" />
     <Compile Include="IEventAttributes.cs" />
     <Compile Include="IGlobalAttributes.cs" />
+    <Compile Include="Image.cs" />
     <Compile Include="INest.cs" />
     <Compile Include="InlineFrame.cs" />
     <Compile Include="IStringLineConvertable.cs" />
     <Compile Include="IStringLinesConvertable.cs" />
     <Compile Include="LineBreak.cs" />
     <Compile Include="Link.cs" />
+    <Compile Include="ListItem.cs" />
     <Compile Include="Main.cs" />
+    <Compile Include="Map.cs" />
     <Compile Include="Meta.cs" />
     <Compile Include="Navigation.cs" />
     <Compile Include="NoScript.cs" />
     <Compile Include="Object.cs" />
+    <Compile Include="OrderedList.cs" />
     <Compile Include="Paragraph.cs" />
     <Compile Include="Param.cs" />
+    <Compile Include="Picture.cs" />
     <Compile Include="PlainText.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,8 +106,17 @@
     <Compile Include="Span.cs" />
     <Compile Include="Style.cs" />
     <Compile Include="Summary.cs" />
+    <Compile Include="SVG.cs" />
+    <Compile Include="Table.cs" />
+    <Compile Include="TableBody.cs" />
+    <Compile Include="TableData.cs" />
+    <Compile Include="TableFooter.cs" />
+    <Compile Include="TableHead.cs" />
+    <Compile Include="TableHeader.cs" />
+    <Compile Include="TableRow.cs" />
     <Compile Include="Title.cs" />
     <Compile Include="Track.cs" />
+    <Compile Include="UnorderedList.cs" />
     <Compile Include="Video.cs" />
   </ItemGroup>
   <ItemGroup>
