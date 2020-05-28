@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
-    class TableHead : HTMLElement, IGlobalAttributes, IEventAttributes, INest
+    public class Insert : HTMLElement, IGlobalAttributes, IEventAttributes, INest
     {
         public HTMLFieldAttribute ID { get; set; }
         public HTMLFieldAttribute Class { get; set; }
@@ -95,10 +95,17 @@ namespace HTMLTools
         public HTMLFieldAttribute OnToggle { get; set; }
         public List<HTMLElement> NestedElements { get; set; }
 
-        public TableHead() : base("thead")
+        public HTMLFieldAttribute Cite { get; set; }
+        public HTMLFieldAttribute DateTime { get; set; }
+
+        public Insert() : base("ins")
         {
-            this.NestedElements = new List<HTMLElement>();
-            this.InitAttributes();
+            NestedElements = new List<HTMLElement>();
+            Cite = new HTMLFieldAttribute("cite");
+            DateTime = new HTMLFieldAttribute("datetime");
+
+            InitAttributes();
+
         }
 
     }

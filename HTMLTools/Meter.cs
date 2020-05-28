@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
-    class TableHead : HTMLElement, IGlobalAttributes, IEventAttributes, INest
+    public class Meter : HTMLElement, IGlobalAttributes, IEventAttributes, INest
     {
         public HTMLFieldAttribute ID { get; set; }
         public HTMLFieldAttribute Class { get; set; }
@@ -95,10 +95,25 @@ namespace HTMLTools
         public HTMLFieldAttribute OnToggle { get; set; }
         public List<HTMLElement> NestedElements { get; set; }
 
-        public TableHead() : base("thead")
+        public HTMLFieldAttribute Form { get; set; }
+        public HTMLFieldAttribute High { get; set; }
+        public HTMLFieldAttribute Low { get; set; }
+        public HTMLFieldAttribute Max { get; set; }
+        public HTMLFieldAttribute Min { get; set; }
+        public HTMLFieldAttribute Optimum { get; set; }
+        public HTMLFieldAttribute Value { get; set; }
+
+        public Meter() : base("meter")
         {
-            this.NestedElements = new List<HTMLElement>();
-            this.InitAttributes();
+            Form = new HTMLFieldAttribute("form");
+            High = new HTMLFieldAttribute("high");
+            Low = new HTMLFieldAttribute("low");
+            Max = new HTMLFieldAttribute("max");
+            Min = new HTMLFieldAttribute("min");
+            Optimum = new HTMLFieldAttribute("optimum");
+            Value = new HTMLFieldAttribute("value");
+            NestedElements = new List<HTMLElement>();
+            InitAttributes();
         }
 
     }
