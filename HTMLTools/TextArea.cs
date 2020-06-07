@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
-    //@qdclass(<a href="https://www.w3schools.com/tags/tag_abbr.asp">Abbreviation</a>)
-    public class Abbreviation : HTMLElement, IGlobalAttributes, IEventAttributes, INest
+    public class TextArea : HTMLElement, IGlobalAttributes, IEventAttributes, INest
     {
         public HTMLFieldAttribute ID { get; set; }
         public HTMLFieldAttribute Class { get; set; }
@@ -96,9 +95,37 @@ namespace HTMLTools
         public HTMLFieldAttribute OnToggle { get; set; }
         public List<HTMLElement> NestedElements { get; set; }
 
-        public Abbreviation() : base("abbr")
+        public HTMLBooleanAttribute AutoFocus{ get; set; }
+        public HTMLFieldAttribute Cols{ get; set; }
+        public HTMLFieldAttribute DirName{ get; set; }
+        public HTMLBooleanAttribute Disabled{ get; set; }
+        public HTMLFieldAttribute Form{ get; set; }
+        public HTMLFieldAttribute MaxLength{ get; set; }
+        public HTMLFieldAttribute Name{ get; set; }
+        public HTMLFieldAttribute PlaceHolder{ get; set; }
+        public HTMLBooleanAttribute Readonly{ get; set; }
+        public HTMLBooleanAttribute Required{ get; set; }
+        public HTMLFieldAttribute Rows{ get; set; }
+        public HTMLFieldAttribute Wrap{ get; set; }
+
+
+        public TextArea() : base("textarea")
         {
-            this.NestedElements = new List<HTMLElement>();
+            NestedElements = new List<HTMLElement>();
+
+            AutoFocus = new HTMLBooleanAttribute("autofocus");
+            Cols = new HTMLFieldAttribute("cols");
+            DirName = new HTMLFieldAttribute("dirname");
+            Disabled = new HTMLBooleanAttribute("disabled");
+            Form = new HTMLFieldAttribute("form");
+            MaxLength = new HTMLFieldAttribute("maxlength");
+            Name = new HTMLFieldAttribute("name");
+            PlaceHolder = new HTMLFieldAttribute("placeholder");
+            Readonly = new HTMLBooleanAttribute("readonly");
+            Required = new HTMLBooleanAttribute("required");
+            Rows = new HTMLFieldAttribute("rows");
+            Wrap = new HTMLFieldAttribute("wrap");
+
             this.InitAttributes();
         }
 

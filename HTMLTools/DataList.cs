@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
-    //@qdclass(<a href="https://www.w3schools.com/tags/tag_abbr.asp">Abbreviation</a>)
-    public class Abbreviation : HTMLElement, IGlobalAttributes, IEventAttributes, INest
+    public class DataList : HTMLElement, IGlobalAttributes, IEventAttributes, INest
     {
         public HTMLFieldAttribute ID { get; set; }
         public HTMLFieldAttribute Class { get; set; }
@@ -96,10 +95,10 @@ namespace HTMLTools
         public HTMLFieldAttribute OnToggle { get; set; }
         public List<HTMLElement> NestedElements { get; set; }
 
-        public Abbreviation() : base("abbr")
+        public DataList() : base("datalist")
         {
-            this.NestedElements = new List<HTMLElement>();
-            this.InitAttributes();
+            NestedElements = new List<HTMLElement>();
+            InitAttributes();
         }
 
     }

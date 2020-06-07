@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
-    //@qdclass(<a href="https://www.w3schools.com/tags/tag_abbr.asp">Abbreviation</a>)
-    public class Abbreviation : HTMLElement, IGlobalAttributes, IEventAttributes, INest
+    public class Button : HTMLElement, IGlobalAttributes, IEventAttributes, INest
     {
         public HTMLFieldAttribute ID { get; set; }
         public HTMLFieldAttribute Class { get; set; }
@@ -96,9 +95,34 @@ namespace HTMLTools
         public HTMLFieldAttribute OnToggle { get; set; }
         public List<HTMLElement> NestedElements { get; set; }
 
-        public Abbreviation() : base("abbr")
+		public HTMLFieldAttribute AutoFocus { get; set; }
+		public HTMLBooleanAttribute Disabled { get; set; }
+		public HTMLFieldAttribute Form { get; set; }
+		public HTMLFieldAttribute FormAction { get; set; }
+		public HTMLFieldAttribute FormEncType { get; set; }
+		public HTMLFieldAttribute FormMethod { get; set; }
+		public HTMLBooleanAttribute FormNoValidate { get; set; }
+		public HTMLFieldAttribute FormTarget { get; set; }
+		public HTMLFieldAttribute Name { get; set; }
+		public HTMLFieldAttribute Type { get; set; }
+		public HTMLFieldAttribute Value { get; set; }
+
+		public Button() : base("button")
         {
-            this.NestedElements = new List<HTMLElement>();
+            AutoFocus = new HTMLFieldAttribute("autofocus");
+            Disabled = new HTMLBooleanAttribute("disabled");
+            Form = new HTMLFieldAttribute("form");
+            FormAction = new HTMLFieldAttribute("formaction");
+            FormEncType = new HTMLFieldAttribute("formenctype");
+            FormMethod = new HTMLFieldAttribute("formmethod");
+            FormNoValidate = new HTMLBooleanAttribute("formnovalidate");
+            FormTarget = new HTMLFieldAttribute("formtarget");
+            Name = new HTMLFieldAttribute("name");
+            Type = new HTMLFieldAttribute("type");
+            Value = new HTMLFieldAttribute("text");
+
+            NestedElements = new List<HTMLElement>();
+
             this.InitAttributes();
         }
 

@@ -6,23 +6,9 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
-    //@qdclass(<a href="https://www.w3schools.com/tags/tag_abbr.asp">Abbreviation</a>)
-    public class Abbreviation : HTMLElement, IGlobalAttributes, IEventAttributes, INest
+    public class FieldSet : HTMLElement, IGlobalAttributes, IEventAttributes, INest
     {
-        public HTMLFieldAttribute ID { get; set; }
-        public HTMLFieldAttribute Class { get; set; }
-        public HTMLFieldAttribute Style { get; set; }
-        public HTMLFieldAttribute AccessKey { get; set; }
-        public HTMLFieldAttribute ContentEditable { get; set; }
-        public HTMLFieldAttribute Dir { get; set; }
-        public HTMLFieldAttribute Draggable { get; set; }
-        public HTMLFieldAttribute DropZone { get; set; }
-        public HTMLFieldAttribute Lang { get; set; }
-        public HTMLFieldAttribute SpellCheck { get; set; }
-        public HTMLFieldAttribute TabIndex { get; set; }
-        public HTMLFieldAttribute Title { get; set; }
-        public HTMLFieldAttribute Translate { get; set; }
-        public HTMLBooleanAttribute Hidden { get; set; }
+        public List<HTMLElement> NestedElements { get; set; }
         public HTMLFieldAttribute OnAfterPrint { get; set; }
         public HTMLFieldAttribute OnBeforePrint { get; set; }
         public HTMLFieldAttribute OnBeforeUnload { get; set; }
@@ -94,13 +80,34 @@ namespace HTMLTools
         public HTMLFieldAttribute OnVolumeChange { get; set; }
         public HTMLFieldAttribute OnWaiting { get; set; }
         public HTMLFieldAttribute OnToggle { get; set; }
-        public List<HTMLElement> NestedElements { get; set; }
+        public HTMLFieldAttribute ID { get; set; }
+        public HTMLFieldAttribute Class { get; set; }
+        public HTMLFieldAttribute Style { get; set; }
+        public HTMLFieldAttribute AccessKey { get; set; }
+        public HTMLFieldAttribute ContentEditable { get; set; }
+        public HTMLFieldAttribute Dir { get; set; }
+        public HTMLFieldAttribute Draggable { get; set; }
+        public HTMLFieldAttribute DropZone { get; set; }
+        public HTMLFieldAttribute Lang { get; set; }
+        public HTMLFieldAttribute SpellCheck { get; set; }
+        public HTMLFieldAttribute TabIndex { get; set; }
+        public HTMLFieldAttribute Title { get; set; }
+        public HTMLFieldAttribute Translate { get; set; }
+        public HTMLBooleanAttribute Hidden { get; set; }
 
-        public Abbreviation() : base("abbr")
+        public HTMLBooleanAttribute Disabled { get; set; }
+        public HTMLFieldAttribute Form { get; set; }
+        public HTMLFieldAttribute Name { get; set; }
+
+        public FieldSet() : base("fieldset")
         {
-            this.NestedElements = new List<HTMLElement>();
-            this.InitAttributes();
+            Disabled = new HTMLBooleanAttribute("disabled");
+            Form = new HTMLFieldAttribute("form");
+            Name = new HTMLFieldAttribute("name");
+            NestedElements = new List<HTMLElement>();
+            InitAttributes();
         }
 
     }
 }
+

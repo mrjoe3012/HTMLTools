@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
-    //@qdclass(<a href="https://www.w3schools.com/tags/tag_abbr.asp">Abbreviation</a>)
-    public class Abbreviation : HTMLElement, IGlobalAttributes, IEventAttributes, INest
+    public class Select : HTMLElement, IGlobalAttributes, IEventAttributes, INest
     {
         public HTMLFieldAttribute ID { get; set; }
         public HTMLFieldAttribute Class { get; set; }
@@ -96,10 +95,27 @@ namespace HTMLTools
         public HTMLFieldAttribute OnToggle { get; set; }
         public List<HTMLElement> NestedElements { get; set; }
 
-        public Abbreviation() : base("abbr")
+        public HTMLBooleanAttribute AutoFocus { get; set; }
+        public HTMLBooleanAttribute Disabled { get; set; }
+        public HTMLFieldAttribute Form { get; set; }
+        public HTMLBooleanAttribute Multiple { get; set; }
+        public HTMLFieldAttribute Name { get; set; }
+        public HTMLBooleanAttribute Required { get; set; }
+        public HTMLFieldAttribute Size { get; set; }
+
+        public Select() : base("select")
         {
-            this.NestedElements = new List<HTMLElement>();
-            this.InitAttributes();
+            AutoFocus = new HTMLBooleanAttribute("autofocus");
+            Disabled = new HTMLBooleanAttribute("disabled");
+            Form = new HTMLFieldAttribute("form");
+            Multiple = new HTMLBooleanAttribute("multiple");
+            Name = new HTMLFieldAttribute("name");
+            Required = new HTMLBooleanAttribute("required");
+            Size = new HTMLFieldAttribute("size");
+
+            NestedElements = new List<HTMLElement>();
+
+            InitAttributes();
         }
 
     }

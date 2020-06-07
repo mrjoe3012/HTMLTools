@@ -63,6 +63,7 @@
     <Compile Include="ColumnGroup.cs" />
     <Compile Include="Comment.cs" />
     <Compile Include="Data.cs" />
+    <Compile Include="DataList.cs" />
     <Compile Include="DefinitionElement.cs" />
     <Compile Include="Deleted.cs" />
     <Compile Include="DescriptionList.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Embed.cs" />
     <Compile Include="Emphasis.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="FieldSet.cs" />
     <Compile Include="FigCaption.cs" />
     <Compile Include="Figure.cs" />
     <Compile Include="Footer.cs" />
@@ -100,6 +102,8 @@
     <Compile Include="IStringLinesConvertable.cs" />
     <Compile Include="Italic.cs" />
     <Compile Include="KBD.cs" />
+    <Compile Include="Label.cs" />
+    <Compile Include="Legend.cs" />
     <Compile Include="LineBreak.cs" />
     <Compile Include="Link.cs" />
     <Compile Include="ListItem.cs" />
@@ -111,7 +115,10 @@
     <Compile Include="Navigation.cs" />
     <Compile Include="NoScript.cs" />
     <Compile Include="Object.cs" />
+    <Compile Include="Option.cs" />
+    <Compile Include="OptionGroup.cs" />
     <Compile Include="OrderedList.cs" />
+    <Compile Include="Output.cs" />
     <Compile Include="Paragraph.cs" />
     <Compile Include="Param.cs" />
     <Compile Include="Picture.cs" />
@@ -128,6 +135,7 @@
     <Compile Include="Script.cs" />
     <Compile Include="MediaSource.cs" />
     <Compile Include="Section.cs" />
+    <Compile Include="Select.cs" />
     <Compile Include="Small.cs" />
     <Compile Include="Span.cs" />
     <Compile Include="StrikeThrough.cs" />
@@ -145,6 +153,7 @@
     <Compile Include="TableHeader.cs" />
     <Compile Include="TableRow.cs" />
     <Compile Include="Template.cs" />
+    <Compile Include="TextArea.cs" />
     <Compile Include="Time.cs" />
     <Compile Include="Title.cs" />
     <Compile Include="Track.cs" />
@@ -158,6 +167,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Button.cs" />
     <Content Include="Form.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
