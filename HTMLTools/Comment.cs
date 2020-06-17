@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace HTMLTools
 {
     //@qdclass(<a target="_blank" href="https://www.w3schools.com/tags/tag_comment.asp">Comment</a>)
-    class Comment : HTMLElement
+    public class Comment : HTMLElement
     {
         public string commentText = "";
 

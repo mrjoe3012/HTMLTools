@@ -127,7 +127,6 @@
     <Compile Include="Picture.cs" />
     <Compile Include="PlainText.cs" />
     <Compile Include="Pre.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Progress.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quote.cs" />

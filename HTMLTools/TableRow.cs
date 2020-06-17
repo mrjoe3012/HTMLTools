@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace HTMLTools
 {
     //@qdclass(<a target="_blank" href="https://www.w3schools.com/tags/tag_tr.asp">TableRow</a>)
-    class TableRow : HTMLElement, IGlobalAttributes, IEventAttributes, INest
+    public class TableRow : HTMLElement, IGlobalAttributes, IEventAttributes, INest
     {
         public HTMLFieldAttribute ID { get; set; }
         public HTMLFieldAttribute Class { get; set; }

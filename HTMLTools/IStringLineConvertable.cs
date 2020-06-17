@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace HTMLTools
 {
     //@qdclass(An interface for objects that can be converted to a single string.)
-    interface IStringLineConvertable
+    public interface IStringLineConvertable
     {
         //@qdmfunction(Returns the object converted to a string.*string)
         string GetLine();
