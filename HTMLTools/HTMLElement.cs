@@ -2,14 +2,17 @@
 
 namespace HTMLTools
 {
+    //@qdclass(A base class for HTML tags)
     public abstract class HTMLElement : IStringLinesConvertable
     {
+        //@qdmfield(The name of the tag as shown in HTML syntax.)
         public readonly string name;
+
         protected List<HTMLAttribute> _attributes;
-        
+        //@qdmfunction(Initialises attributes in the class, must be called at the end of the constructor.*void)
         protected void InitAttributes()
         {
-            if(typeof(IGlobalAttributes).IsAssignableFrom(this.GetType()))
+            if (typeof(IGlobalAttributes).IsAssignableFrom(this.GetType()))
             {
                 IGlobalAttributes globalAtt = (IGlobalAttributes)this;
 
@@ -26,6 +29,8 @@ namespace HTMLTools
             _attributes = HTMLTools.GetAttributes(this);
         }
 
+        //@qdmfunction(The constructor.*Constructor)
+        //@qdparam(name*The name of the tag as seen in HTML syntax.*string)
         public HTMLElement(string name)
         {
             this.name = name;
@@ -37,7 +42,7 @@ namespace HTMLTools
 
             string topLine = string.Format("<{0}", this.name);
 
-            foreach(HTMLAttribute attribute in this._attributes)
+            foreach (HTMLAttribute attribute in this._attributes)
             {
                 topLine += attribute.GetLine();
             }
@@ -56,7 +61,7 @@ namespace HTMLTools
         {
             string line = "", attributeDeclarations = "";
 
-            foreach(HTMLAttribute attribute in _attributes)
+            foreach (HTMLAttribute attribute in _attributes)
             {
                 attributeDeclarations += attribute.GetLine();
             }
@@ -68,4 +73,5 @@ namespace HTMLTools
             return line;
         }
     }
+    //@qdend
 }

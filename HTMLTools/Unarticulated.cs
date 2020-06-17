@@ -1,4 +1,5 @@
 ﻿using System;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
-    class U : HTMLElement, IGlobalAttributes, IEventAttributes, INest
+    //@qdclass(<a target="_blank" href="https://www.w3schools.com/tags/tag_u.asp">Unarticulated</a>)
+    class Unarticulated : HTMLElement, IGlobalAttributes, IEventAttributes, INest
     {
         public HTMLFieldAttribute ID { get; set; }
         public HTMLFieldAttribute Class { get; set; }
@@ -95,11 +97,12 @@ namespace HTMLTools
         public HTMLFieldAttribute OnToggle { get; set; }
         public List<HTMLElement> NestedElements { get; set; }
 
-        public U() : base("u")
+        public Unarticulated() : base("u")
         {
             NestedElements = new List<HTMLElement>();
             InitAttributes();
         }
 
     }
+    //@qdend
 }

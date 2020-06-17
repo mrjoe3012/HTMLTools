@@ -157,7 +157,7 @@
     <Compile Include="Time.cs" />
     <Compile Include="Title.cs" />
     <Compile Include="Track.cs" />
-    <Compile Include="U.cs" />
+    <Compile Include="Unarticulated.cs" />
     <Compile Include="UnorderedList.cs" />
     <Compile Include="Var.cs" />
     <Compile Include="Video.cs" />
@@ -168,7 +168,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Button.cs" />
-    <Content Include="Form.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

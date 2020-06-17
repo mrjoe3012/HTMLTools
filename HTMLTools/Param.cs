@@ -6,93 +6,94 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
+    //@qdclass(<a target="_blank" href="https://www.w3schools.com/tags/tag_param.asp">Param</a>)
     public class Param : HTMLElement, IGlobalAttributes, IEventAttributes
     {
-        public HTMLFieldAttribute ID { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute Class { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute Style { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute AccessKey { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute ContentEditable { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute Dir { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute Draggable { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute DropZone { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute Lang { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute SpellCheck { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute TabIndex { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute Title { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute Translate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLBooleanAttribute Hidden { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnAfterPrint { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnBeforePrint { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnBeforeUnload { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnError { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnHashChange { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnLoad { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnMessage { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnOffline { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnOnline { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnPageHide { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnPageShow { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnPopState { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnResize { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnStorage { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnUnload { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnBlur { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnChange { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnContextMenu { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnFocus { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnInput { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnInvalid { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnReset { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnSearch { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnSelect { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnSubmit { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnKeyDown { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnKeyPress { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnKeyUp { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnClick { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnDblClick { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnMouseDown { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnMouseMove { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnMouseOut { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnMouseOver { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnMouseUp { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnMouseWheel { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnWheel { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnDrag { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnDragEnd { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnDragEnter { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnDragLeave { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnDragOver { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnDragStart { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnDrop { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnScroll { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnCopy { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnCut { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnPaste { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnAbort { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnCanPlay { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnCanPlayThrough { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnCueChange { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnDurationChange { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnEmptied { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnEnded { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnLoadedData { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnLoadedMetadata { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnLoadStart { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnPause { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnPlay { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnPlaying { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnProgress { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnRateChange { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnSeeked { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnSeeking { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnStalled { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnSuspend { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnTimeUpdate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnVolumeChange { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnWaiting { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public HTMLFieldAttribute OnToggle { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public HTMLFieldAttribute ID { get; set; }
+        public HTMLFieldAttribute Class { get; set; }
+        public HTMLFieldAttribute Style { get; set; }
+        public HTMLFieldAttribute AccessKey { get; set; }
+        public HTMLFieldAttribute ContentEditable { get; set; }
+        public HTMLFieldAttribute Dir { get; set; }
+        public HTMLFieldAttribute Draggable { get; set; }
+        public HTMLFieldAttribute DropZone { get; set; }
+        public HTMLFieldAttribute Lang { get; set; }
+        public HTMLFieldAttribute SpellCheck { get; set; }
+        public HTMLFieldAttribute TabIndex { get; set; }
+        public HTMLFieldAttribute Title { get; set; }
+        public HTMLFieldAttribute Translate { get; set; }
+        public HTMLBooleanAttribute Hidden { get; set; }
+        public HTMLFieldAttribute OnAfterPrint { get; set; }
+        public HTMLFieldAttribute OnBeforePrint { get; set; }
+        public HTMLFieldAttribute OnBeforeUnload { get; set; }
+        public HTMLFieldAttribute OnError { get; set; }
+        public HTMLFieldAttribute OnHashChange { get; set; }
+        public HTMLFieldAttribute OnLoad { get; set; }
+        public HTMLFieldAttribute OnMessage { get; set; }
+        public HTMLFieldAttribute OnOffline { get; set; }
+        public HTMLFieldAttribute OnOnline { get; set; }
+        public HTMLFieldAttribute OnPageHide { get; set; }
+        public HTMLFieldAttribute OnPageShow { get; set; }
+        public HTMLFieldAttribute OnPopState { get; set; }
+        public HTMLFieldAttribute OnResize { get; set; }
+        public HTMLFieldAttribute OnStorage { get; set; }
+        public HTMLFieldAttribute OnUnload { get; set; }
+        public HTMLFieldAttribute OnBlur { get; set; }
+        public HTMLFieldAttribute OnChange { get; set; }
+        public HTMLFieldAttribute OnContextMenu { get; set; }
+        public HTMLFieldAttribute OnFocus { get; set; }
+        public HTMLFieldAttribute OnInput { get; set; }
+        public HTMLFieldAttribute OnInvalid { get; set; }
+        public HTMLFieldAttribute OnReset { get; set; }
+        public HTMLFieldAttribute OnSearch { get; set; }
+        public HTMLFieldAttribute OnSelect { get; set; }
+        public HTMLFieldAttribute OnSubmit { get; set; }
+        public HTMLFieldAttribute OnKeyDown { get; set; }
+        public HTMLFieldAttribute OnKeyPress { get; set; }
+        public HTMLFieldAttribute OnKeyUp { get; set; }
+        public HTMLFieldAttribute OnClick { get; set; }
+        public HTMLFieldAttribute OnDblClick { get; set; }
+        public HTMLFieldAttribute OnMouseDown { get; set; }
+        public HTMLFieldAttribute OnMouseMove { get; set; }
+        public HTMLFieldAttribute OnMouseOut { get; set; }
+        public HTMLFieldAttribute OnMouseOver { get; set; }
+        public HTMLFieldAttribute OnMouseUp { get; set; }
+        public HTMLFieldAttribute OnMouseWheel { get; set; }
+        public HTMLFieldAttribute OnWheel { get; set; }
+        public HTMLFieldAttribute OnDrag { get; set; }
+        public HTMLFieldAttribute OnDragEnd { get; set; }
+        public HTMLFieldAttribute OnDragEnter { get; set; }
+        public HTMLFieldAttribute OnDragLeave { get; set; }
+        public HTMLFieldAttribute OnDragOver { get; set; }
+        public HTMLFieldAttribute OnDragStart { get; set; }
+        public HTMLFieldAttribute OnDrop { get; set; }
+        public HTMLFieldAttribute OnScroll { get; set; }
+        public HTMLFieldAttribute OnCopy { get; set; }
+        public HTMLFieldAttribute OnCut { get; set; }
+        public HTMLFieldAttribute OnPaste { get; set; }
+        public HTMLFieldAttribute OnAbort { get; set; }
+        public HTMLFieldAttribute OnCanPlay { get; set; }
+        public HTMLFieldAttribute OnCanPlayThrough { get; set; }
+        public HTMLFieldAttribute OnCueChange { get; set; }
+        public HTMLFieldAttribute OnDurationChange { get; set; }
+        public HTMLFieldAttribute OnEmptied { get; set; }
+        public HTMLFieldAttribute OnEnded { get; set; }
+        public HTMLFieldAttribute OnLoadedData { get; set; }
+        public HTMLFieldAttribute OnLoadedMetadata { get; set; }
+        public HTMLFieldAttribute OnLoadStart { get; set; }
+        public HTMLFieldAttribute OnPause { get; set; }
+        public HTMLFieldAttribute OnPlay { get; set; }
+        public HTMLFieldAttribute OnPlaying { get; set; }
+        public HTMLFieldAttribute OnProgress { get; set; }
+        public HTMLFieldAttribute OnRateChange { get; set; }
+        public HTMLFieldAttribute OnSeeked { get; set; }
+        public HTMLFieldAttribute OnSeeking { get; set; }
+        public HTMLFieldAttribute OnStalled { get; set; }
+        public HTMLFieldAttribute OnSuspend { get; set; }
+        public HTMLFieldAttribute OnTimeUpdate { get; set; }
+        public HTMLFieldAttribute OnVolumeChange { get; set; }
+        public HTMLFieldAttribute OnWaiting { get; set; }
+        public HTMLFieldAttribute OnToggle { get; set; }
 
         public HTMLFieldAttribute Name { get; set; }
         public HTMLFieldAttribute Value { get; set; }
@@ -107,4 +108,5 @@ namespace HTMLTools
         }
 
     }
+    //@qdend
 }

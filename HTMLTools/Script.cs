@@ -1,4 +1,5 @@
 ﻿using System;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
+    //@qdclass(<a target="_blank" href="https://www.w3schools.com/tags/tag_script.asp">Script</a>)
     public class Script : HTMLElement, IGlobalAttributes, INest
     {
         public HTMLFieldAttribute ID { get; set; }
@@ -44,4 +46,5 @@ namespace HTMLTools
         }
 
     }
+    //@qdend
 }

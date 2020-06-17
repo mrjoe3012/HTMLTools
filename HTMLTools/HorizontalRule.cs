@@ -1,5 +1,6 @@
 ﻿namespace HTMLTools
 {
+    //@qdclass(<a target="_blank" href="https://www.w3schools.com/tags/tag_hr.asp">HorizontalRule</a>)
     public class HorizontalRule : HTMLElement, IGlobalAttributes, IEventAttributes
     {
         public HTMLFieldAttribute ID { get; set; }
@@ -94,4 +95,5 @@
         }
 
     }
+    //@qdend
 }

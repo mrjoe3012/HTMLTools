@@ -1,4 +1,5 @@
 ﻿using System;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
-    //@qdclass(<a href="https://www.w3schools.com/tags/tag_abbr.asp">Abbreviation</a>)
+    //@qdclass(<a target="_blank" href="https://www.w3schools.com/tags/tag_abbr.asp">Abbreviation</a>)
     public class Abbreviation : HTMLElement, IGlobalAttributes, IEventAttributes, INest
     {
         public HTMLFieldAttribute ID { get; set; }
@@ -104,3 +105,4 @@ namespace HTMLTools
 
     }
 }
+//@qdend

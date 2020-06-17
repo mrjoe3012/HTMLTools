@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
+    //@qdclass(A class representing an HTML attribute in which the value is either true or false. This value is shown simply by writing the name of the attribute within the tag.)
     public class HTMLBooleanAttribute : HTMLAttribute
     {
         private bool value = false;
+        //@qdmfield(The value of the field)
         public bool Value
         {
             get
@@ -30,10 +32,10 @@ namespace HTMLTools
             this.value = value;
         }
 
-        public HTMLBooleanAttribute(HTMLBooleanAttribute rhs) : base(rhs)
+        /*public HTMLBooleanAttribute(HTMLBooleanAttribute rhs) : base(rhs)
         {
             this.value = rhs.value;
-        }
+        }*/
 
         public override string GetLine()
         {
@@ -53,4 +55,5 @@ namespace HTMLTools
 
         }
     }
+    //@qdend
 }

@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
+    //@qdclass(A class representing an HTML attribute which must be assigned a value.)
     public class HTMLFieldAttribute : HTMLAttribute
     {
         private string value;
+        //@qdmfield(The value of the attribute, if left empty or null then the attribute will not be included within the HTML tag.)
         public string Value
         {
             get
@@ -31,10 +33,10 @@ namespace HTMLTools
             this.value = value;
         }
 
-        public HTMLFieldAttribute(HTMLFieldAttribute rhs) : base(rhs)
+        /*public HTMLFieldAttribute(HTMLFieldAttribute rhs) : base(rhs)
         {
             this.value = rhs.value;
-        }
+        }*/
 
         protected override void Validate()
         {
@@ -63,4 +65,5 @@ namespace HTMLTools
         }
 
     }
+    //@qdend
 }

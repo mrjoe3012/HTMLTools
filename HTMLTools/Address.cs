@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
+    //@qdclass(<a target="_blank" href="https://www.w3schools.com/tags/tag_address.asp">Address</a>)
     public class Address : HTMLElement, IGlobalAttributes, IEventAttributes, INest
     {
         public HTMLFieldAttribute ID { get; set; }
@@ -102,4 +103,5 @@ namespace HTMLTools
         }
 
     }
+    //@qdend
 }

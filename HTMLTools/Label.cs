@@ -1,4 +1,5 @@
 ﻿using System;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
+    //@qdclass(<a target="_blank" href="https://www.w3schools.com/tags/tag_label.asp">Label</a>)
     public class Label : HTMLElement, IGlobalAttributes, IEventAttributes, INest
     {
         public List<HTMLElement> NestedElements { get; set; }
@@ -108,4 +110,5 @@ namespace HTMLTools
 
 
     }
+    //@qdend
 }

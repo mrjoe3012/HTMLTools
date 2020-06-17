@@ -6,21 +6,24 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
+    //@qdclass(A base class for all attributes within a HTML tag.)
     public abstract class HTMLAttribute : IStringLineConvertable
     {
+        //@qdmfield(The name of the attribute as seen in HTML syntax)
         public readonly string name;
 
         public abstract string GetLine();
-
+        //@qdmfunction(The Constructor*Constructor)
+        //@qdparam(name*The name of the attribute as seen in HTML syntax*string)
         public HTMLAttribute(string name)
         {
             this.name = name;
         }
 
-        public HTMLAttribute(HTMLAttribute rhs)
+        /*public HTMLAttribute(HTMLAttribute rhs)
         {
             this.name = rhs.name;
-        }
+        }*/
 
         protected void OnValueChanged()
         {
@@ -38,4 +41,5 @@ namespace HTMLTools
         }
 
     }
+    //@qdend
 }

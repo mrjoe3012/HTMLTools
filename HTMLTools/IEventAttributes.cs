@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
+    //@qdclass(Interface containing many event associated attributes that are included in many HTML tags.)
     public interface IEventAttributes
     {
         HTMLFieldAttribute OnAfterPrint
@@ -435,4 +436,4 @@ namespace HTMLTools
         }
 
     }
-}
+}//@qdend

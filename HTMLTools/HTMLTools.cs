@@ -3,10 +3,13 @@ using System.Reflection;
 
 namespace HTMLTools
 {
+    //@qdclass(Static helper and container class)
     public static class HTMLTools
     {
+        //@qdmfield(The version of this deployment of the HTMLTools library)
         public const string VERSION = "1.0";
-
+        //@qdmfunction(A helper function that intialises attributes with their proper names.*void)
+        //@qdparam(attributes*A reference to the interface to be initialised.*ref IGlobalAttributes)
         public static void InitGlobalAttributes(ref IGlobalAttributes attributes)
         {
             attributes.AccessKey = new HTMLFieldAttribute("accesskey");
@@ -25,7 +28,8 @@ namespace HTMLTools
             attributes.Translate = new HTMLFieldAttribute("translate");
 
        }
-
+        //@qdmfunction(A helper function that initialises attributes with their proper names.*void)
+        //@qdparam(attributes*A reference to the interface to be initialised.*ref IEventAttributes)
         public static void InitEventAttributes(ref IEventAttributes attributes)
         {
             attributes.OnAbort = new HTMLFieldAttribute("onabort");
@@ -100,7 +104,8 @@ namespace HTMLTools
             attributes.OnWaiting = new HTMLFieldAttribute("onwaiting");
             attributes.OnWheel = new HTMLFieldAttribute("onwheel");
         }
-
+        //@qdmfunction(Returns every attribute defined in the passed element.*List<HTMLAttribute>)
+        //@qdparam(e*The HTMLElement*HTMLElement)
         public static List<HTMLAttribute> GetAttributes(HTMLElement e)
         {
             PropertyInfo[] propertyInfos = e.GetType().GetProperties();
@@ -120,7 +125,8 @@ namespace HTMLTools
             return attributes;
 
         }
-
+        //@qdmfunction(Calls get lines on each nested item implementing ILinesConvertable and returns the lines in a big list.*List<string>)
+        //@qdparam(element*The element.*HTMLElement)
         public static List<string> GetNestedLines(HTMLElement element)
         {
             List<string> lines = new List<string>();
@@ -137,7 +143,8 @@ namespace HTMLTools
             }
             return lines;
         }
-
+        //@qdmfunction(Calls get line on each nested item implementing ILineConvertable or ILinesConvertable and returns as one line.*string)
+        //@qdparam(element*The element.*HTMLElement)
         public static string GetNestedLine(HTMLElement element)
         {
             string line = "";
@@ -153,6 +160,7 @@ namespace HTMLTools
             }
             return line;
         }
-
+        
     }
+    //@qdend
 }

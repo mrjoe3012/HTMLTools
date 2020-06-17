@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace HTMLTools
 {
+    //@qdclass(Interface declaring attributes common to many tags in HTML.)
     public interface IGlobalAttributes
     {
         HTMLFieldAttribute ID
@@ -94,3 +95,4 @@ namespace HTMLTools
 
     }
 }
+//@qdend
