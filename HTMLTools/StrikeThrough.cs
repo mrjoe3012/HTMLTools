@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace HTMLTools
 {
     //@qdclass(<a target="_blank" href="https://www.w3schools.com/tags/tag_s.asp">StrikeThrough</a>)
-    class StrikeThrough : HTMLElement, IGlobalAttributes, IEventAttributes, INest
+    public class StrikeThrough : HTMLElement, IGlobalAttributes, IEventAttributes, INest
     {
         public HTMLFieldAttribute ID { get; set; }
         public HTMLFieldAttribute Class { get; set; }
